@@ -105,6 +105,9 @@ body{
     margin-top: 150px;
     margin-left: 50px;
     text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Slight upward shift */
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .side-wrapper h1{

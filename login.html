@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body> 
+    <div class="main">
+        <div class="mail">
+            <label for="Email">Email</label>
+            <br>
+            <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="pass">
+            <label for="Password">Password</label>
+            <br>
+            <div class="pas">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span id="togglePassword" class="eye-icon">&#128065;</span> 
+            </div>
+        </div>
+
+        <button class="gin">Login</button>
+    </div>
+
+    <div class="side">
+        <div class="logo">
+            <img src="images/Frame 343.svg" alt="">
+        </div>
+
+        <div class="side-wrapper">
+            <h1>Welcome Back!</h1>
+            <p>Login to your account by entering yur details</p>
+    
+            <div class="count">
+                <h4>Already a user?</h4>
+                <a href="sign.html"><button class="log">Sign Up</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

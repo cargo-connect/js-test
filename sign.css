@@ -35,6 +35,9 @@ body{
     margin-top: 150px;
     margin-left: 50px;
     text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Slight upward shift */
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .side-wrapper h1{
@@ -107,6 +110,10 @@ body{
     border-radius:5px;
 }
 
+.fourth input:focus{
+    border: 1px solid gray;
+}
+
 .eye-icon {
     position: absolute;
     right: 10px;
@@ -128,7 +135,7 @@ body{
     display: flex;
 }
 
-#check{
+#terms{
     width: 18px;
     margin-top: -10px;
     margin-right: 10px;
