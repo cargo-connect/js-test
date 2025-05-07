@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="side">
+        <div class="logo">
+            <img src="images/Frame 343.svg" alt="">
+        </div>
+
+        <div class="side-wrapper">
+            <h1>Get Started</h1>
+            <p>Get started with Cargo Connect with these few <br> steps </p>
+
+            <div class="count">
+                <h4>Already a user?</h4>
+                <a href="login.html"><button class="log">Login</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-up form -->
+    <div class="main">
+        <div class="first">
+            <label for="name">Full Name</label>
+            <br>
+            <input type="text" name="full name" id="full" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="second">
+            <label for="Email">Email Address</label>
+            <br>
+            <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="third">
+            <label for="Number">Phone Number</label>
+            <br>
+            <input type="text" id="Number" placeholder="Enter your phone number">
+        </div>
+
+        <div class="fourth">
+            <label for="password">Password</label>
+            <br>
+            <div class="pas">
+                <input type="password" id="password" placeholder="At least 8 characters" required>
+                <span id="togglePassword" class="eye-icon">&#128065;</span>
+            </div>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="check" required>
+            <p>I agree to the <a href="">Terms and Conditions</a></p>
+        </div>
+
+        <button class="up">Sign Up</button>
+    </div>
+
+    <!-- Welcome screen (Initially hidden) -->
+    <div class="welcome" style="display: none;">
+        <h1>Welcome to Cargo Connect!</h1>
+
+        <div class="message">
+            <h2>Verification</h2>
+            <p>We've sent a code to your email. Please enter it below.</p>
+        </div>
+
+        <div class="code-input">
+            <input type="text" maxlength="1" class="input-box" />
+            <input type="text" maxlength="1" class="input-box" />
+            <input type="text" maxlength="1" class="input-box" />
+            <input type="text" maxlength="1" class="input-box" />
+        </div>
+
+        <a href=""><button class="verify">Verify</button></a>
+
+        <hr>
+        <p>Didn't recieve the code? <em>Resend</em> </p>
+    </div>
+
+    <script src="sign.js"></script>
+</body>
+</html>
